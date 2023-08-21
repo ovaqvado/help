@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container {
+            display: flex; /** Флекс контайнер **/
+            flex-direction:row; /** Все элементы располагаем в строку **/
+            flex-wrap: wrap; /** перенос элементов, если не хватает пространства **/
+            justify-content: space-around; /** Выравнивание по ширине **/
+            align-items:center; /** выравнивание по высоте **/
+        }
+        .box {
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 50px 10px;
+            margin: 5px;
+            
+            
+        }
+        .box-1{
+            height: 150px;
+        }
+        .box-2{
+            height: 400px;
+        }
+        .flex-1 {
+            flex-grow: 1;
+
+        }
+        .flex-2{
+            flex-grow: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+            <div class="box flex-1 box-1">Блок 1</div>
+            <div class="box flex-2 box-2">Блок 2</div>
+            <div class="box flex-1 box-1">Блок 3</div>
+    </div>
+</body>
+</html>
